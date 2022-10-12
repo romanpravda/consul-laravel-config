@@ -1,6 +1,6 @@
 # Библиотека для получения значений конфигурации из Consul
 
-[![phpversion](https://img.shields.io/badge/php-8.1-blue?logo=PHP)](https://www.php.net/releases/8.1/ru.php)
+[![phpversion](https://img.shields.io/badge/php-7.1-blue?logo=PHP)](https://www.php.net/releases/7.1/en.php)
 
 [//]: # ([![pipeline status]&#40;https://git.devspark.ru/coursometer/consul-laravel-config/badges/main/pipeline.svg&#41;]&#40;https://git.devspark.ru/coursometer/reports-proxy/-/commits/main&#41;)
 [//]: # ([![coverage report]&#40;https://git.devspark.ru/coursometer/consul-laravel-config/badges/main/coverage.svg&#41;]&#40;https://git.devspark.ru/coursometer/reports-proxy/-/commits/main&#41;)
@@ -11,8 +11,8 @@
 
 ## Требования
 
-* PHP 8.1
-* Laravel >= 9.20
+* PHP 7.1
+* Laravel 5.7.*
 * Consul >= 0.9
 
 ## Инструкция по подключению
