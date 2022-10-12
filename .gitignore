@@ -1,0 +1,7 @@
+/vendor
+/.idea
+.phpunit.result.cache
+composer.override.json
+.phpstorm.meta.php
+.DS_Store
+composer.lock

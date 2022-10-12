@@ -1,0 +1,40 @@
+{
+  "name": "romanpravda/consul-laravel-config",
+  "description": "A package for updating a laravel app config via Consul",
+  "type": "library",
+  "keywords": ["romanpravda", "consul-laravel-config"],
+  "authors": [
+    {
+      "name": "Roman Pravda",
+      "email": "roman.pravda@icloud.com"
+    }
+  ],
+  "license": "MIT",
+  "version": "0.1.0",
+  "require": {
+    "php": "^8.1",
+    "illuminate/support": "^9.20",
+    "dcarbone/php-consul-api": "^1.1"
+  },
+  "require-dev": {
+    "laravel/pint": "^1.0",
+    "vimeo/psalm": "^4.24"
+  },
+  "autoload": {
+    "psr-4": {
+      "Romanpravda\\Consul\\Laravel\\Config\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Romanpravda\\Consul\\Laravel\\Config\\Providers\\ConsulConfigServiceProvider"
+      ]
+    }
+  },
+  "scripts": {
+    "phpstan": "./vendor/bin/psalm",
+    "phpcs": "./vendor/bin/pint --test",
+    "phpcs-fix": "./vendor/bin/pint -v"
+  }
+}
