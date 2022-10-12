@@ -10,15 +10,11 @@
     }
   ],
   "license": "MIT",
-  "version": "0.1.0",
   "require": {
-    "php": "^8.1",
-    "illuminate/support": "^9.20",
-    "dcarbone/php-consul-api": "^1.1"
-  },
-  "require-dev": {
-    "laravel/pint": "^1.0",
-    "vimeo/psalm": "^4.24"
+    "php": "^7.1",
+    "illuminate/support": "5.7.*",
+    "dcarbone/php-consul-api": "^0.6",
+    "ext-json": "*"
   },
   "autoload": {
     "psr-4": {
@@ -31,10 +27,5 @@
         "Romanpravda\\Consul\\Laravel\\Config\\Providers\\ConsulConfigServiceProvider"
       ]
     }
-  },
-  "scripts": {
-    "phpstan": "./vendor/bin/psalm",
-    "phpcs": "./vendor/bin/pint --test",
-    "phpcs-fix": "./vendor/bin/pint -v"
   }
 }
