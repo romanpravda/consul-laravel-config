@@ -1,31 +1,31 @@
 {
-  "name": "romanpravda/consul-laravel-config",
-  "description": "A package for updating a laravel app config via Consul",
-  "type": "library",
-  "keywords": ["romanpravda", "consul-laravel-config"],
-  "authors": [
-    {
-      "name": "Roman Pravda",
-      "email": "roman.pravda@icloud.com"
+    "name": "romanpravda/consul-laravel-config",
+    "description": "A package for updating a laravel app config via Consul",
+    "type": "library",
+    "keywords": ["romanpravda", "consul-laravel-config"],
+    "authors": [
+        {
+            "name": "Roman Pravda",
+            "email": "roman.pravda@icloud.com"
+        }
+    ],
+    "license": "MIT",
+    "require": {
+        "php": "^7.1",
+        "illuminate/support": "^5.6",
+        "dcarbone/php-consul-api": "^0.6",
+        "ext-json": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Romanpravda\\Consul\\Laravel\\Config\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Romanpravda\\Consul\\Laravel\\Config\\Providers\\ConsulConfigServiceProvider"
+            ]
+        }
     }
-  ],
-  "license": "MIT",
-  "require": {
-    "php": "^7.1",
-    "illuminate/support": "5.7.*",
-    "dcarbone/php-consul-api": "^0.6",
-    "ext-json": "*"
-  },
-  "autoload": {
-    "psr-4": {
-      "Romanpravda\\Consul\\Laravel\\Config\\": "src/"
-    }
-  },
-  "extra": {
-    "laravel": {
-      "providers": [
-        "Romanpravda\\Consul\\Laravel\\Config\\Providers\\ConsulConfigServiceProvider"
-      ]
-    }
-  }
 }
