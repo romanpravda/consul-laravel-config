@@ -37,7 +37,7 @@ class ConsulConfigServiceProvider extends ServiceProvider
         $enabled = Config::get('consul.enabled', false);
         if ($enabled) {
             /** @var ConfigRepositoryInterface $configRepository */
-            $configRepository = resolve(ConfigRepositoryInterface::class);
+            $configRepository = $this->app->make(ConfigRepositoryInterface::class);
 
             foreach ($configRepository->generator() as $key => $value) {
                 Config::set($key, $value);
